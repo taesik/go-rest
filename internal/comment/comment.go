@@ -8,7 +8,7 @@ import (
 
 var (
 	ErrFetchingComment = errors.New("failed to fetch comment by id")
-	ErrNotImplemented  = errors.New("Not implemented")
+	ErrNotImplemented  = errors.New("not implemented")
 )
 
 // Store - this interface defines all of the methods
