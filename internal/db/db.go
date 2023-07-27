@@ -3,8 +3,10 @@ package db
 import (
 	"context"
 	"fmt"
-	"github.com/jmoiron/sqlx"
 	"os"
+
+	"github.com/jmoiron/sqlx"
+	_ "github.com/lib/pq"
 )
 
 type Database struct {
