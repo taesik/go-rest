@@ -41,6 +41,14 @@ func NewService(store Store) *Service {
 
 func (s *Service) GetComment(ctx context.Context, id string) (Comment, error) {
 	fmt.Println("retrieving context")
+
+	/**
+	Context Propagation
+	*/
+	//ctx = context.WithValue(ctx, "request_id", "unique-string")
+	//
+	//fmt.Println(ctx.Value("request_id"))
+
 	cmt, err := s.Store.GetComment(ctx, id)
 	if err != nil {
 		fmt.Println(err)
